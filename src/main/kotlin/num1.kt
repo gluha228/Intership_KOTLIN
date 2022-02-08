@@ -32,6 +32,6 @@ fun main() {
     }
     for (i in output) {
         println()
-        for (j in i.indices) print("${i[j]} ")
+        for (j in i) print("$j ")
     }
 }

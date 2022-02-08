@@ -4,7 +4,6 @@ object Num1 {
 }
 
 fun main() {
-    println("q:")
     val q = readLine()?.toInt() ?: return
     if (q !in (0..500)) throw IllegalArgumentException("q")
     var n: Int

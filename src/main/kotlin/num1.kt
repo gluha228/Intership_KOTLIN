@@ -1,9 +1,6 @@
 import java.lang.IllegalArgumentException
 
-object Num1 {
-}
-
-fun main() {
+fun num1() {
     val q = readLine()?.toInt() ?: return
     if (q !in (0..500)) throw IllegalArgumentException("q")
     var n: Int
@@ -29,8 +26,13 @@ fun main() {
         }
         output.add(s)
     }
-    for (i in output) {
+    for (i in output)
+    {
         println()
         for (j in i) print("$j ")
     }
+}
+
+fun main() {
+   num2()
 }

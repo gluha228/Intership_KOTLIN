@@ -32,7 +32,3 @@ fun num1() {
         for (j in i) print("$j ")
     }
 }
-
-fun main() {
-   num2()
-}

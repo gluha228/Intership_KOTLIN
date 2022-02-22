@@ -1,7 +1,7 @@
-import java.util.*
 
-fun num2() {
-    val string = (readLine() + " ").lowercase(Locale.getDefault())
+fun num2(inString: String): MutableMap<Char, Int> {
+    //val string = (readLine() + " ").lowercase(Locale.getDefault())
+    val string = "$inString "//без пробела в конце никак
     val repeats = mutableMapOf<Char, Int>()
     var currentRepeats = 1
     for (i in 1 until string.length)
@@ -10,5 +10,6 @@ fun num2() {
                 repeats[string[i - 1]] = currentRepeats
             currentRepeats = 1
         }
-    println(repeats)
+    //println(repeats)
+    return repeats
 }
